@@ -3,7 +3,7 @@
 
 Notes application provides a simple list of notes.
 
-[Demo](https://jreisz.github.io/notepad)
+[Demo](https://jreisz.github.io/notepad/)
 
 ![Screenshot](./public/assets/img/demo.gif)
 

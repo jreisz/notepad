@@ -1,11 +1,11 @@
 {
-  "homepage": "https://jreisz.github.io/notepad/",
+  "homepage": "https://jreisz.github.io/notepad",
   "name": "react-notepad-nodejs",
   "version": "0.1.0",
-  "private": true,  
+  "private": true,
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages2 -d build",    
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --testResultsProcessor='jest-junit' --verbose",
