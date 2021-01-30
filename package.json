@@ -2,7 +2,15 @@
   "homepage": "https://jreisz.github.io/notepad/",
   "name": "react-notepad-nodejs",
   "version": "0.1.0",
-  "private": true,
+  "private": true,  
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages2 -d build",    
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --testResultsProcessor='jest-junit' --verbose",
+    "test:watch": "react-scripts test --env=jsdom --verbose"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -15,13 +23,8 @@
     "react-scripts": "4.0.1",
     "uuid": "^8.3.1"
   },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",    
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --testResultsProcessor='jest-junit' --verbose",
-    "test:watch": "react-scripts test --env=jsdom --verbose"
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   },
   "jest-junit": {
     "outputName": "./test-results.xml",
@@ -48,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.1.0"
   }
 }
